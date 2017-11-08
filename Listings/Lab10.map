@@ -1,0 +1,161 @@
+Component: ARM Compiler 5.06 update 5 (build 528) Tool: armlink [4d35e2]
+
+==============================================================================
+
+Section Cross References
+
+    serialdriver.o(MyCode) refers to start.o(Start) for Startup
+    serialdriver.o(MyCode) refers to serialdriver.o(MyData) for RunStopWatch
+    serialdriver.o(MyCode) refers to serialdriver.o(MyConst) for Prompt1
+    serialdriver.o(RESET) refers to start.o(.ARM.__at_0x1FFFE000) for __initial_sp
+    serialdriver.o(RESET) refers to serialdriver.o(MyCode) for Reset_Handler
+    serialdriver.o(RESET) refers to start.o(Start) for Dummy_Handler
+    serialdriver.o(RESET) refers to hardfault_lcd.o(HardFaultLCD) for HardFault_Handler
+
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      192  serialdriver.o(RESET)
+    HardFault_LCD.s                          0x00000000   Number         0  hardfault_lcd.o ABSOLUTE
+    SerialDriver.s                           0x00000000   Number         0  serialdriver.o ABSOLUTE
+    Start.s                                  0x00000000   Number         0  start.o ABSOLUTE
+    .ARM.__at_0xC0                           0x000000c0   Section       64  start.o(.ARM.__at_0xC0)
+    HardFaultLCD                             0x00000100   Section      408  hardfault_lcd.o(HardFaultLCD)
+    LCD_WF_Config                            0x0000018c   Data           0  hardfault_lcd.o(HardFaultLCD)
+    LCD_WF_FRONTPLANE_PINS                   0x00000208   Data           0  hardfault_lcd.o(HardFaultLCD)
+    LCD_DIGITS                               0x00000228   Data           0  hardfault_lcd.o(HardFaultLCD)
+    Start                                    0x00000298   Section      252  start.o(Start)
+    SystemInit                               0x000002a7   Thumb Code    54  start.o(Start)
+    SetClock48MHz                            0x000002dd   Thumb Code   140  start.o(Start)
+    MyConst                                  0x00000394   Section      100  serialdriver.o(MyConst)
+    Prompt1                                  0x00000394   Data          17  serialdriver.o(MyConst)
+    Prompt2                                  0x000003a5   Data          16  serialdriver.o(MyConst)
+    Prompt3                                  0x000003b5   Data          36  serialdriver.o(MyConst)
+    multFact                                 0x000003d9   Data          11  serialdriver.o(MyConst)
+    Goodbye                                  0x000003e4   Data          20  serialdriver.o(MyConst)
+    .ARM.__at_0x400                          0x00000400   Section       16  start.o(.ARM.__at_0x400)
+    MyCode                                   0x00000410   Section     1144  serialdriver.o(MyCode)
+    Helper                                   0x00000447   Thumb Code    62  serialdriver.o(MyCode)
+    Init_UART0_IRQ                           0x00000485   Thumb Code   148  serialdriver.o(MyCode)
+    Init_PIT_IRQ                             0x00000519   Thumb Code    74  serialdriver.o(MyCode)
+    PIT_ISR                                  0x00000563   Thumb Code    34  serialdriver.o(MyCode)
+    UART0_ISR                                0x00000585   Thumb Code    58  serialdriver.o(MyCode)
+    GetChar                                  0x000005d5   Thumb Code    16  serialdriver.o(MyCode)
+    DIVU                                     0x000005e5   Thumb Code    44  serialdriver.o(MyCode)
+    GetString                                0x00000611   Thumb Code    60  serialdriver.o(MyCode)
+    PutString                                0x0000064d   Thumb Code    20  serialdriver.o(MyCode)
+    PutNumU                                  0x00000661   Thumb Code    50  serialdriver.o(MyCode)
+    InitQueue                                0x00000693   Thumb Code    22  serialdriver.o(MyCode)
+    Enqueue                                  0x000006a9   Thumb Code    70  serialdriver.o(MyCode)
+    Dequeue                                  0x000006ef   Thumb Code    66  serialdriver.o(MyCode)
+    NewLine                                  0x0000076b   Thumb Code    24  serialdriver.o(MyCode)
+    .ARM.__at_0x1FFFE000                     0x1fffe000   Section      256  start.o(.ARM.__at_0x1FFFE000)
+    MyData                                   0x1fffe100   Section      292  serialdriver.o(MyData)
+    TxBuffer                                 0x1fffe100   Data          80  serialdriver.o(MyData)
+    TxRecord                                 0x1fffe150   Data          18  serialdriver.o(MyData)
+    RxBuffer                                 0x1fffe164   Data          80  serialdriver.o(MyData)
+    RxRecord                                 0x1fffe1b4   Data          18  serialdriver.o(MyData)
+    Temp                                     0x1fffe1c8   Data           2  serialdriver.o(MyData)
+    RunStopWatch                             0x1fffe1cc   Data           2  serialdriver.o(MyData)
+    Count                                    0x1fffe1d0   Data           4  serialdriver.o(MyData)
+    String                                   0x1fffe1d4   Data          80  serialdriver.o(MyData)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$STANDARDLIB$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __Vectors                                0x00000000   Data           0  serialdriver.o(RESET)
+    __Vectors_End                            0x000000c0   Data           0  serialdriver.o(RESET)
+    __Vectors_Size                           0x000000c0   Number         0  serialdriver.o ABSOLUTE
+    HardFault_Handler                        0x00000101   Thumb Code    16  hardfault_lcd.o(HardFaultLCD)
+    InitLCD                                  0x00000111   Thumb Code   124  hardfault_lcd.o(HardFaultLCD)
+    LCD_PutHex                               0x000001cd   Thumb Code    44  hardfault_lcd.o(HardFaultLCD)
+    Startup                                  0x00000299   Thumb Code    14  start.o(Start)
+    Dummy_Handler                            0x00000369   Thumb Code     2  start.o(Start)
+    Reset_Handler                            0x00000411   Thumb Code    54  serialdriver.o(MyCode)
+    PutChar                                  0x000005bf   Thumb Code    22  serialdriver.o(MyCode)
+    __initial_sp                             0x1fffe100   Data           0  start.o(.ARM.__at_0x1FFFE000)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000411
+
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00000aac, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region ER_RO (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00000888, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x000000c0   Data   RO            2    RESET               serialdriver.o
+    0x000000c0   0x000000c0   0x00000040   Data   RO           15    .ARM.__at_0xC0      start.o
+    0x00000100   0x00000100   0x00000198   Code   RO           10    HardFaultLCD        hardfault_lcd.o
+    0x00000298   0x00000298   0x000000fc   Code   RO           14    Start               start.o
+    0x00000394   0x00000394   0x00000064   Data   RO            3    MyConst             serialdriver.o
+    0x000003f8   0x000003f8   0x00000008   PAD
+    0x00000400   0x00000400   0x00000010   Code   RO           16    .ARM.__at_0x400     start.o
+    0x00000410   0x00000410   0x00000478   Code   RO            1  * MyCode              serialdriver.o
+
+
+    Execution Region ER_RW (Exec base: 0x1fffe000, Load base: 0x00000888, Size: 0x00000224, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x1fffe000   0x00000888   0x00000100   Data   RW           17    .ARM.__at_0x1FFFE000  start.o
+    0x1fffe100   0x00000988   0x00000124   Data   RW            4    MyData              serialdriver.o
+
+
+    Execution Region ER_ZI (Exec base: 0x1fffe224, Load base: 0x00000aac, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       408        224          0          0          0        552   hardfault_lcd.o
+      1144        208        292        292          0       1628   serialdriver.o
+       268         58         64        256          0        772   start.o
+
+    ----------------------------------------------------------------------
+      1820        490        364        548          0       2952   Object Totals
+         0          0          0          0          0          0   (incl. Generated)
+         0          0          8          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+         0          0          0          0          0          0   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      1820        490        364        548          0       2744   Grand Totals
+      1820        490        364        548          0       2744   ELF Image Totals
+      1820        490        364        548          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 2184 (   2.13kB)
+    Total RW  Size (RW Data + ZI Data)               548 (   0.54kB)
+    Total ROM Size (Code + RO Data + RW Data)       2732 (   2.67kB)
+
+==============================================================================
+
